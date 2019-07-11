@@ -1,0 +1,5 @@
+   WavesKeeper.initialPromise
+        .then((keeperApi) => {
+            /*...init app*/
+            keeperApi.publicState().then( state => startApp(state));
+        })
